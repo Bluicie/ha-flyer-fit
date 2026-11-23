@@ -1,0 +1,58 @@
+{
+  "config": {
+    "flow_title": "{name}",
+    "step": {
+      "user": {
+        "description": "Choose the bike to add. Switch the bike on if it is not listed.",
+        "data": {
+          "address": "Bike"
+        }
+      },
+      "bluetooth_confirm": {
+        "description": "Add {name}?"
+      }
+    },
+    "abort": {
+      "already_configured": "This bike is already added.",
+      "no_devices_found": "No switched-on FIT e-bike was found. Switch the bike on near a Bluetooth adapter or proxy and try again.",
+      "not_supported": "This device is not a FIT e-bike."
+    }
+  },
+  "entity": {
+    "binary_sensor": {
+      "powered_on": {
+        "name": "Powered on"
+      }
+    },
+    "sensor": {
+      "range": {
+        "name": "Range"
+      },
+      "odometer": {
+        "name": "Odometer"
+      },
+      "assist_mode": {
+        "name": "Assist mode",
+        "state": {
+          "off": "Off",
+          "eco": "Eco",
+          "std": "Standard",
+          "auto": "Auto",
+          "high": "High"
+        }
+      },
+      "battery_voltage": {
+        "name": "Battery voltage"
+      },
+      "battery_current": {
+        "name": "Battery current"
+      },
+      "battery_power": {
+        "name": "Battery power"
+      },
+      "riding_time": {
+        "name": "Riding time"
+      }
+    }
+  }
+}

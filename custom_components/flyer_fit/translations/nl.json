@@ -1,0 +1,58 @@
+{
+  "config": {
+    "flow_title": "{name}",
+    "step": {
+      "user": {
+        "description": "Kies de fiets om toe te voegen. Zet de fiets aan als hij niet in de lijst staat.",
+        "data": {
+          "address": "Fiets"
+        }
+      },
+      "bluetooth_confirm": {
+        "description": "{name} toevoegen?"
+      }
+    },
+    "abort": {
+      "already_configured": "Deze fiets is al toegevoegd.",
+      "no_devices_found": "Geen ingeschakelde FIT e-bike gevonden. Zet de fiets aan in de buurt van een Bluetooth-adapter of -proxy en probeer opnieuw.",
+      "not_supported": "Dit apparaat is geen FIT e-bike."
+    }
+  },
+  "entity": {
+    "binary_sensor": {
+      "powered_on": {
+        "name": "Ingeschakeld"
+      }
+    },
+    "sensor": {
+      "range": {
+        "name": "Actieradius"
+      },
+      "odometer": {
+        "name": "Kilometerstand"
+      },
+      "assist_mode": {
+        "name": "Ondersteuningsmodus",
+        "state": {
+          "off": "Uit",
+          "eco": "Eco",
+          "std": "Standaard",
+          "auto": "Auto",
+          "high": "Hoog"
+        }
+      },
+      "battery_voltage": {
+        "name": "Accuspanning"
+      },
+      "battery_current": {
+        "name": "Accustroom"
+      },
+      "battery_power": {
+        "name": "Accuvermogen"
+      },
+      "riding_time": {
+        "name": "Rijtijd"
+      }
+    }
+  }
+}
